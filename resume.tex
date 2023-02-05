@@ -43,6 +43,16 @@
   }
 }
 
+
+\newcommand{\resumeSchool}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5}
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -84,9 +94,10 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSchool
       {University of Calgary}{Calgary, AB}
       {Bachelor of Computer Science}{Sep. 2020 -- Apr. 2024}
+      {Concentration in Information Security}
   \resumeSubHeadingListEnd
 
 
@@ -184,3 +195,7 @@
 
 %-------------------------------------------
 \end{document}
+
+
+
+
